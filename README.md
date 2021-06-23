@@ -1,3 +1,10 @@
+# 追記
+```bash
+docker build . -t divan/golang:gotrace1.11
+docker run --rm -it -p 2000:2000  -v $PWD:/go divan/golang:gotrace1.11  examples/hello.go
+```
+で実行できた．
+
 # GoTrace - Go Concurrency 3D Tracer
 
 GoTrace is a 3D WebGL visualizer of Go concurrency. It analyzes trace produced by `go tool trace` and renders visualization of concurrency flow.
